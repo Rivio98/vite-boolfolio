@@ -19,7 +19,7 @@ export default {
         <div class="row">
             <div class="col-12">
                 <div class="row">
-                    <div class="col-4" v-for="project in projects">
+                    <div class="col-4 py-3" v-for="project in projects">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">{{ project.name }}</h5>
