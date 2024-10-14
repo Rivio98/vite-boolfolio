@@ -2,16 +2,16 @@
 import AppProject from './components/AppProject.vue';
 export default {
   components: {
-    AppProject
+    AppProject,
   }
 }
 </script>
-<template lang="">
-  <div>
-    <AppProject/>
+<template>
+  <div class='text-center p-2'>
+    <AppProject />
   </div>
 </template>
 
-<style lang="">
-
+<style lang="scss">
+@import './scss/generals.scss';
 </style>
