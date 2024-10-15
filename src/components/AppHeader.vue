@@ -1,6 +1,8 @@
 <script>
 export default {
-
+    props: {
+        menu: Array
+    }
 }
 </script>
 <template>
@@ -12,11 +14,8 @@ export default {
                 </div>
                 <div class="col-6">
                     <ul class="list-unstyled d-flex justify-content-center">
-                        <li class="mx-2">
-                            <a href="#">Homepage</a>
-                        </li>
-                        <li class="mx-2">
-                            <a href="#">MyProjects</a>
+                        <li class="mx-2" v-for="item, index in menu" :key="index">
+                            <a href="#">{{ item.label }}</a>
                         </li>
                     </ul>
                 </div>
